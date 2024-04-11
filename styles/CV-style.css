@@ -1,0 +1,298 @@
+
+
+
+body{
+   
+    min-height: 100vh;
+    /* margin: 150px 150px; */
+    font-family: 'Urbanist', sans-serif;
+    background-image: url("../images/canva2.jpg");
+    background-position: center;
+    background-size: cover;
+   
+}
+#menu{
+    background-color: rgba(29, 36, 39, 0.708);
+}
+#menu ul li a:hover{
+    background-color: rgba(187, 93, 6, 0.885);
+    transform: scale(1.03);
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+#rootElement{
+    height: 1450px;
+   
+   
+    border-radius: 10px;
+    padding: 5%;
+    box-sizing: border-box;
+   
+   
+}
+#Page-div{
+ height:100%;
+ 
+ padding-left: 22%;
+
+
+ box-sizing: border-box;
+ 
+ 
+
+   
+}
+
+#div-1{
+    width: 27%;
+    height: 100%;
+    
+    float: left;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(117, 76, 35);
+    background-color: rgba(167, 88, 10, 0.913);
+    
+    overflow: hidden;
+    
+}
+img{
+    width:100%;
+    border: 3px solid rgb(46, 21, 6);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+#frame{
+    padding: 10%;
+    
+}
+
+#div-1 #educationANDreference{
+ 
+ margin: 1.95rem 0 6.75rem 2.5rem;
+ 
+ 
+ 
+
+
+}
+
+#div-1 #educationANDreference ul{
+    list-style: none;
+    padding-left: 1.125rem;
+    margin-bottom: 1.875rem;
+}
+
+#educationANDreference .other{
+    font-size: 0.93rem;
+}
+
+#educationANDreference .main{
+    font-weight: bold;
+}
+#div-1 ul li p{
+    margin: 0.5rem 0;
+}
+
+
+.stripe{
+    width: 15%;
+    height: 1.5625rem;
+    /* display: inline-block; */
+    background-color: rgb(46, 21, 6);
+    float: inline-start;
+    margin: 0;
+    padding: 0;
+    
+
+}
+.stripe-p{
+    margin: 0;
+    width: 85%;
+    height: 1.5625rem;
+    line-height: 25px;
+background-color: rgba(137, 88, 40, 0.749);
+background-color: rgba(179, 101, 22, 0.895);
+box-sizing: border-box;
+    padding-left: 0.625rem;
+    float:left;
+    font-weight: 600;
+    
+    
+}
+
+.details{
+    margin: 0 0 0.9375rem 3.5rem;
+    font-size:0.8125rem;
+}
+
+#Socials{
+width: 100%;
+    margin-top: 3.75rem;
+    height: auto;
+}
+
+.Employer{
+    font-size: 1.1rem;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+#div-2{
+    width: 73%;
+    height: 100%;
+    float:left;
+    background-color: rgb(229, 229, 229);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+
+}
+
+
+#Opening{
+    background-color: rgb(117, 76, 35);
+    background-color: rgb(167, 89, 10);
+   
+    padding: 2.8175rem;
+    color: whitesmoke;
+}
+
+#Opening h1{
+    font-size: 2.4375rem;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0.9375rem;
+   
+    
+
+
+}
+
+#Opening h1 span{
+    font-weight: 100;
+    color: rgba(245, 245, 245, 0.92);
+}
+#Opening p{
+    margin-left:0.9375rem;
+    font-size: 1.5rem;
+    margin: 0 0.9375rem;
+    font-weight: lighter;
+    color: rgba(245, 245, 245, 0.833);
+    letter-spacing: 2px;
+}
+
+
+#Projects, #WorkExperience{
+    padding: 3.125rem;
+}
+
+
+#Projects p{
+    margin: 0.625rem 0;
+}
+
+#WorkExperience{
+    padding-top: 0.5rem;
+    height: 25%;
+    
+}
+
+
+#Timeline{
+box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float:left;
+    padding-left: 1.6875rem;
+}
+
+#Work{
+box-sizing: border-box;
+    width: 80%;
+    float:left;
+    height:100%;
+}
+
+.Location{
+    margin: 0;
+}
+.job-title{
+    margin-bottom:0.3125rem;
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    
+}
+
+#job-description{
+    margin-bottom: 5.1875rem;
+}
+
+#date{
+    margin-bottom:11.25rem;
+}
+
+
+#Skills{
+    padding-left: 3.125rem;
+    height: auto;
+    margin-top: 5rem;
+
+}
+
+#skillSet{
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    float:left;
+    
+}
+
+#empty{
+   
+    width: 18.3%;
+    
+    float:left;
+
+    
+}
+
+#skillSet span{
+    background-color: rgb(46, 21, 6);
+    border-radius: 5px;
+    color: whitesmoke;
+ 
+   
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+}
+#skillSet p {
+   
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+.upperCase{
+    text-transform: uppercase;
+}
+
+hr{
+    margin-bottom: 1.5625rem;
+    height: 2px;
+    background-color:rgb(46, 21, 6);
+}
+
+#hr-Work{
+    margin-bottom: 2.8125rem;
+}
+
+#educationANDreference hr{
+    background-color:rgb(229, 229, 229);
+}
+
+.purple{
+    color:rgb(46, 21, 6);
+}

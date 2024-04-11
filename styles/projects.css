@@ -1,0 +1,128 @@
+body{
+    background-image: url('../images/wood.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#page-div{
+    
+    padding: 2% 5% 2% 25%;
+    
+    box-sizing: border-box;
+
+}
+
+
+
+h2{
+    margin: 0 auto 100px auto;
+    padding: 15px 5px;
+    text-align: center;
+    width: 35%;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+    letter-spacing: 4px;
+    color: whitesmoke;
+    font-size: 2.5rem;;
+    font-family: 'Pacifico';
+    font-weight: normal;
+    /* background-color:rgba(23, 29, 31, 0.635) ; */
+
+}
+
+
+
+#row-1, #row-2, #row-middle{
+    height: 250px;
+    margin-bottom: 50px;
+}
+#row-1 img, #row-2 img{
+    box-sizing: border-box;
+    width: 45%;
+    float:left;
+    height:100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.proj1, .proj2{
+    width: 49%;
+    height:100%;
+    box-sizing: border-box;
+    float:left;
+    transition: ease-out .3s;
+    
+   
+}
+.proj1:hover, .proj2:hover{
+    transform: scale(1.03);
+
+}
+
+#row-middle .proj1{
+    width: 100%;
+}
+
+#row-middle img{
+    box-sizing: border-box;
+    width: 22%;
+    float:left;
+    height:100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+#row-middle .proj1-info{
+    width: 78%;
+
+}
+
+
+
+.proj1{
+    margin-right: 2%;
+}
+
+
+.proj1-info, .proj2-info{
+    width: 55%;
+    float:left;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 80%;
+}
+
+.proj1-info h3, .proj2-info h3{
+    font-family: 'Pacifico', sans-serif;
+    font-weight: normal;
+   height: 20%;
+    font-size: 1.4rem;
+    margin: 0;
+
+}
+.proj1-info p, .proj2-info p{
+    height: 60%;
+}
+
+.proj1-info a, .proj2-info a{
+    text-decoration: none;
+    color: rgb(0, 165, 165);
+    font-weight: bold;
+    height: 20%;
+    
+    
+    
+}
+
+
+#explore-link{
+    text-align: end;
+}

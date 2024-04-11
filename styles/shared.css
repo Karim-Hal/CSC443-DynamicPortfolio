@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+   
+
+}
+
+#menu{
+    background-color: rgba(29, 36, 39, 0.708);
+    box-sizing: border-box;
+    width: 20%;
+    float:left;
+    height: 100%;
+    position: fixed;
+    
+    text-align: center;
+
+}
+
+#menu h1{
+    color: whitesmoke;
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+}
+#menu ul li a {
+  
+    color: whitesmoke;
+   
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: ease-out 0.3s;
+    background-color: rgba(87, 51, 16, 0.913);
+
+    
+   
+}
+
+#menu ul li a:hover{
+    background-color: rgba(123, 73, 27, 0.856);
+    transform: scale(1.03);
+}
+
+#menu ul li{
+    margin: 75px 0;
+}
+#menu-name{
+    font-family: 'Pacifico', sans-serif;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    
+    
+}
+
+.in-active{
+    text-decoration: none;
+}
+
