@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $userData = array($fullName, $dob, $sex, $displayName, $email, $pass);
 
-    $file = '../csv/users.csv';
+    $file = '../data-files/users.csv';
    
    $handle1 = fopen($file, "r");
 $userExists = false;

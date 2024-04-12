@@ -62,27 +62,34 @@
       </div>
 
       <div id="gallery">
-        <div class="outerframe">
-          <div class="innerframe">
-            <a href="#proj-image"><img src="images/risc3.png" alt="" /></a>
-          </div>
-        </div>
+      <?php
+      $file = "data-files/co.txt";
+      $handle = fopen($file, "r");
+      $internalLinks = array('#proj-image', '#turtle-code', '#pong-game', '#python-logo');
+      $i = 0;
+      if ($handle){
+        while (($data = fgets($handle))!== FALSE){
+          $data = trim($data);
+          $imgURL = "images/".$data;
+          
+          echo'
 
-        <div class="outerframe">
+          <div class="outerframe">
           <div class="innerframe">
-            <a href="#turtle-code"><img src="images/risc2.png" alt="" /></a>
+            <a href=" '.$internalLinks[$i++].'"><img src="'.$imgURL .'" alt="hi" /></a>
+
           </div>
-        </div>
-        <div class="outerframe">
-          <div class="innerframe">
-            <a href="#pong-game"><img src="images/risc4.png" alt="" /></a>
-          </div>
-        </div>
-        <div class="outerframe">
-          <div class="innerframe">
-            <a href="#python-logo"><img src="images/risc1.png" alt="" /></a>
-          </div>
-        </div>
+        </div>';
+        }
+
+      }
+      else{
+        echo "Could not open file sucessfully";
+      }
+     
+      ?>
+      
+
       </div>
     </div>
   </body>

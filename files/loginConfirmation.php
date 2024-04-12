@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     }
 
-    $file = "../csv/users.csv";
+    $file = "../data-files/users.csv";
 
     $handle = fopen($file, "r");
 

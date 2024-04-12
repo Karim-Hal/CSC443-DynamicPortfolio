@@ -1,0 +1,4 @@
+risc3.png
+risc2.png
+risc4.png
+risc1.png
