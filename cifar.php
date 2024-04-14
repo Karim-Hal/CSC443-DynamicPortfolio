@@ -1,3 +1,11 @@
+<?php
+require 'files/session.php';
+ensureLoggedIn();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,3 +1,10 @@
+<?php
+require 'files/session.php';
+ensureLoggedIn();
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,15 +24,29 @@
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/CV-style.css" />
     <title>karim's CV</title>
+    <script src="js/logoutConfig.js" defer></script>
   </head>
   <body>
+
+  <aside style="display:none">
+      <div id="logout-config">
+        <h1>Are you sure you want to log out?</h1>
+        <a href="files/login.php" id="confirm-btn">Yes</a>
+        <button type="button" id="cancel-btn" onclick="exitLogoutOverlay()">Cancel</button>
+      </div>
+    </aside>
+
     <div id="menu">
-        <h1 id="menu-name">Resume</h1>
+    <?php
+      $un = $_SESSION['user-name'];
+      echo '<h1 id="menu-name">Welcome, '.$un.'</h1>';
+      ?>
         <ul>
           <li ><a href="main.php" class="in-active"  >Home</a></li>
           <li><a href="AboutMe.php" class="in-active">About Me</a></li>
           <li><a href="CV.php" style="background-color: rgba(144, 76, 8, 0.913);" >CV</a></li>
           <li><a href="Projects.php" class="in-active">Projects</a></li>
+          <li> <button id="logout-btn" class="in-active" onclick="showLogoutOverlay()">Log out</button></li>
         </ul>
       </div>
     <div id="rootElement">

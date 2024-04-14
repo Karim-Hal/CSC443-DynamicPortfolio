@@ -1,7 +1,5 @@
-
-
-
 <?php
+session_start();
 
 function varExists($n){
     if (isset($n)){
@@ -29,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     while (($data = fgetcsv($handle)) !== FALSE){
         if ($data[4] == $email){
             $userExists = true;
+           
             break;
            
 
@@ -43,9 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         while (($data = fgetcsv($handle)) !== FALSE){
             if ($data[4] == $email && $data[5] == $pass){
                 $validCredentials = true;
-                echo '<script>
-                window.location.href = "../main.php";
-                </script>';
+                $_SESSION['logged-in'] = true;
+                $_SESSION['user-name'] = $data[0];
+
+                header("Location: ../main.php");
                
     
             }

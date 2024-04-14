@@ -33,7 +33,7 @@
 
       <section id="submission">
         <button type="submit">Log In</button>
-        <p>Don't have an account? <a href="index1.php">Sign up</a></p>
+        <p>Don't have an account? <a href="index.php">Sign up</a></p>
       </section>
     </form>
   </body>
